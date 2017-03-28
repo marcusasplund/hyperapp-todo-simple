@@ -1,0 +1,27 @@
+{
+  "name": "hyperapp-todo",
+  "version": "0.0.1",
+  "author": "Marcus Asplund",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "babel-eslint": "^7.2.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.1.0",
+    "browserify-css": "^0.10.0",
+    "hyperapp": "^0.7.0"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "/server.js",
+      "/utils/hyper-tap.js"
+    ]
+  }
+}
