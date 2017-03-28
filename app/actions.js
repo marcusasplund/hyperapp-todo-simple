@@ -17,7 +17,7 @@ export const actions = {
   toggle: (model, id) => ({
     todos: toggleTodo(model, id)
   }),
-  update: (model, id) => ({
+  edit: (model, id) => ({
     todos: editTodo(model, id)
   })
 }
