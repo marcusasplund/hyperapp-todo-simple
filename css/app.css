@@ -5,6 +5,11 @@
 button {
   margin-right: 5px;
 }
+[contenteditable]:focus {
+  outline: 0px solid transparent;
+  border: 1px solid #9b4dca;
+  border-radius: 3px;
+}
 .item {
   min-height: 6rem;
 }
