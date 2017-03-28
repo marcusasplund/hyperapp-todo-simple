@@ -1,0 +1,28 @@
+
+@import url("./normalize.css");
+@import url("./milligram.css");
+
+button {
+  margin-right: 5px;
+}
+.item {
+  min-height: 6rem;
+}
+.button-small {
+  padding: 0 1.5rem;
+  line-height: 3rem;
+  height: 3rem;
+}
+.done {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.row .column.column-15 {
+    flex: 0 0 15%;
+    max-width: 15%;
+}
+.row .column.column-85 {
+    flex: 0 0 85%;
+    max-width: 85%;
+}
