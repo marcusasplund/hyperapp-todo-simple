@@ -4,7 +4,7 @@
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-[hyperapp.js](https://github.com/hyperapp/hyperapp) todo
+[hyperapp.js](https://github.com/hyperapp/hyperapp) crud todo
 
 # [demo](https://pap.as/hyperapp/todo/)
 
