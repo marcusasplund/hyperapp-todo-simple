@@ -15,7 +15,7 @@ Add some todos, click buttons to delete or toggle state, tap or click text in to
 ````
     $ git clone https://github.com/marcusasplund/hyperapp-todo-simple.git
  
-    $ cd hyperapp-todo
+    $ cd hyperapp-todo-simple
  
     $ yarn OR $ npm install
 
