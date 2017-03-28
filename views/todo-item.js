@@ -13,7 +13,7 @@ export const todoItem = (todo, actions) =>
       contenteditable
       data-uuid={todo.id}
       oninput={e => (todo.value = e.target.textContent)}
-      onblur={e => actions.update(e)}>
+      onblur={e => actions.edit(e)}>
       {todo.value}
     </div>
   </div>
