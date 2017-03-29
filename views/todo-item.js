@@ -12,7 +12,9 @@ export const todoItem = (todo, actions) =>
       class={todo.done ? 'done column column-85' : 'column column-85'}
       contenteditable
       data-uuid={todo.id}
-      oninput={e => actions.update(e)}>
+      onkeyup={e => e.keyCode === 13 ? actions.editEnter(e) : null}
+      oninput={e => (todo.value = e.target.textContent)}
+      onblur={e => actions.edit(e)}>
       {todo.value}
     </div>
   </div>

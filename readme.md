@@ -4,7 +4,7 @@
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-[hyperapp.js](https://github.com/hyperapp/hyperapp) todo
+[hyperapp.js](https://github.com/hyperapp/hyperapp) crud todo
 
 # [demo](https://pap.as/hyperapp/todo/)
 
@@ -15,7 +15,7 @@ Add some todos, click buttons to delete or toggle state, tap or click text in to
 ````
     $ git clone https://github.com/marcusasplund/hyperapp-todo-simple.git
  
-    $ cd hyperapp-todo
+    $ cd hyperapp-todo-simple
  
     $ yarn OR $ npm install
 

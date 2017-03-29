@@ -11,13 +11,16 @@ export const actions = {
   input: (model, {value}) => ({
     input: value
   }),
-  remove: (model, id) => ({
-    todos: removeTodo(model, id)
+  remove: (model, e) => ({
+    todos: removeTodo(model, e)
   }),
-  toggle: (model, id) => ({
-    todos: toggleTodo(model, id)
+  toggle: (model, e) => ({
+    todos: toggleTodo(model, e)
   }),
-  update: (model, id) => ({
-    todos: editTodo(model, id)
-  })
+  edit: (model, e) => ({
+    todos: editTodo(model, e)
+  }),
+  editEnter: (model, e) => {
+    e.target.blur()
+  }
 }
