@@ -1,4 +1,3 @@
-import '../css/app.css'
 import {app} from 'hyperapp'
 import {actions} from './actions'
 import {model} from './model'
