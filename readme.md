@@ -6,9 +6,9 @@
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-[hyperapp.js](https://github.com/hyperapp/hyperapp) crud todo
+# [hyperapp.js](https://github.com/hyperapp/hyperapp) crud todo
 
-# [demo](https://pap.as/hyperapp/todo/)
+## [demo](https://pap.as/hyperapp/todo/)
 
 Add some todos, click buttons to delete or toggle state, tap or click text in todo to edit
 
