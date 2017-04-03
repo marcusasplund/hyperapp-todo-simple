@@ -9,7 +9,7 @@
     "preserve": "npm run build",
     "serve": "serve release -s -p 4000"
   },
-  "main": "src/app.js",
+  "main": "src/app/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/marcusasplund/hyperapp-todo-simple.git"
