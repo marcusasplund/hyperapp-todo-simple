@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 import {h} from 'hyperapp'
-import {todoInput} from '../views/todo-input'
-import {todoList} from '../views/todo-list'
-import {todoListDone} from '../views/todo-list-done'
-import {modelDisplay} from '../views/model-display'
+import {todoInput} from './todo-input'
+import {todoList} from './todo-list'
+import {todoListDone} from './todo-list-done'
+import {modelDisplay} from './model-display'
 
 export const todoMain = (model, actions) =>
   <div class='container'>
