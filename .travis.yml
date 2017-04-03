@@ -6,3 +6,11 @@ node_js:
   - "node"
 
 sudo: false
+
+install:
+  - npm install
+
+script:
+  - npm start
+  - npm run build
+  - npm run serve
