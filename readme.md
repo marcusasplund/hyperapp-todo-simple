@@ -24,4 +24,26 @@ Add some todos, click buttons to delete or toggle state, tap or click text in to
     $ npm start
 ````
 
-Open up application at http://localhost:8080/ in browser
+Open up application at http://localhost:4000/ in browser
+
+## build a release
+
+````
+    $ npm run build
+
+````
+This will generate a release directory with your minified/rev'd assets.
+
+
+## serve static
+
+````
+    $ npm run serve
+
+````
+
+This will use serve to statically serve your app from the release directory.
+
+## Credits
+
+The rollup and fly config is based on https://github.com/tzellman/hyperapp-boilerplate
