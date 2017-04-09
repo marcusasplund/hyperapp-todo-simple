@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import {h} from 'hyperapp'
 
-export const modelDisplay = (model) =>
+export const ModelDisplay = (props) =>
   <pre>
     <code>
-      {JSON.stringify(model, null, 2)}
+      {JSON.stringify(props.model, null, 2)}
     </code>
   </pre>

@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import {h} from 'hyperapp'
 
-export const todoInput = (model, actions) =>
+export const TodoInput = (props) =>
   <div class='row'>
     <input
       type='text'
-      onkeyup={e => e.keyCode === 13 && e.target.value !== '' ? actions.add() : null}
-      oninput={e => actions.input({value: e.target.value})}
-      value={model.input}
-      placeholder={model.placeholder} />
+      onkeyup={e => e.keyCode === 13 && e.target.value !== '' ? props.actions.add() : null}
+      oninput={e => props.actions.input({value: e.target.value})}
+      value={props.model.input}
+      placeholder={props.model.placeholder} />
   </div>

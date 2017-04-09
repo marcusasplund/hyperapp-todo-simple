@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import {h} from 'hyperapp'
-import {todoItem} from './todo-item'
+import {TodoItem} from './todo-item'
 
-export const todoListDone = (model, actions) =>
+export const TodoListDone = (props) =>
   <div id='todo-list-done'>
     {
-      model.todos
+      props.model.todos
         .filter(todo => todo.done)
-        .map(todo => todoItem(todo, actions))
+        .map(todo => <TodoItem todo={todo} actions={props.actions} />)
     }
   </div>
