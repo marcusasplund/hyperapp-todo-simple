@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import {h} from 'hyperapp'
 
-export const RemoveButton = (props) =>
+export const RemoveButton = ({id, actions}) =>
   <button
     class='button button-small button-outline'
-    data-uuid={props.id}
-    onclick={e => props.actions.remove(e)}>x
+    data-uuid={id}
+    onclick={e => actions.remove(e)}>x
   </button>

@@ -6,7 +6,7 @@ import {TodoInput} from './todo-input'
 import {TodoListDone} from './todo-list-done'
 import {ModelDisplay} from './model-display'
 
-export const todoMain = (model, actions) =>
+export const TodoMain = ({model, actions}) =>
   <div class='container'>
     <HeaderView />
     <TodoList model={model} actions={actions} />
