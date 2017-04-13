@@ -1,12 +1,13 @@
+/* eslint-disable no-unused-vars */
 import {h} from 'hyperapp'
-import {removeButton} from '../views/remove-button'
-import {toggleButton} from '../views/toggle-button'
+import {RemoveButton} from './remove-button'
+import {ToggleButton} from './toggle-button'
 
-export const todoItem = (todo, actions) =>
+export const TodoItem = ({actions, todo}) =>
   <div class='item row'>
     <div class='column column-15'>
-      {removeButton(actions, todo.id)}
-      {toggleButton(actions, todo.id)}
+      <RemoveButton actions={actions} id={todo.id} />
+      <ToggleButton actions={actions} id={todo.id} />
     </div>
     <div
       class={todo.done ? 'done column column-85' : 'column column-85'}

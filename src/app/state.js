@@ -1,6 +1,6 @@
 import {getTodosFromStorage} from '../utils/local-storage'
 
-export const model = {
+export const state = {
   input: '',
   placeholder: 'Add new todo',
   todos: getTodosFromStorage() || []

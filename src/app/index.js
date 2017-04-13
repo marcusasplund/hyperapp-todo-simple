@@ -1,15 +1,14 @@
-import '../css/app.css'
 import {app} from 'hyperapp'
 import {actions} from './actions'
-import {model} from './model'
+import {state} from './state'
 import {root} from './root'
 import {view} from './view'
-import {hooks} from './hooks'
+import {events} from './events'
 
 app({
   actions,
-  model,
+  state,
   root,
   view,
-  hooks
+  events
 })
