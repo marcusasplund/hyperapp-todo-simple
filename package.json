@@ -41,6 +41,6 @@
     "serve": "^5.1.2"
   },
   "dependencies": {
-    "hyperapp": "^0.7.1"
+    "hyperapp": "^0.8.0"
   }
 }
