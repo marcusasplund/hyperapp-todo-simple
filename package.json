@@ -1,7 +1,7 @@
 {
   "name": "hyperapp-todo-simple",
   "version": "0.0.1",
-  "author": "Marcus Asplund",
+  "author": "Marcus Asplund <marcus@greatname.se> (@marcusasplund)",
   "license": "MIT",
   "scripts": {
     "build": "fly build release",
@@ -14,8 +14,6 @@
     "type": "git",
     "url": "git+ssh://git@github.com/marcusasplund/hyperapp-todo-simple.git"
   },
-  "author": "Marcus Asplund <marcus@greatname.se> (@marcusasplund)",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/marcusasplund/hyperapp-todo-simple/issues"
   },
