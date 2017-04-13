@@ -1,6 +1,6 @@
-import {setTodosInStorage} from '../utils/local-storage'
+import {storeStateInStorage} from '../utils/local-storage'
 
 export const events = {
-  onUpdate: (oldState, newState, data) =>
-    setTodosInStorage(newState.todos)
-}
+    render: (state) => 
+      storeStateInStorage(state)
+  }
