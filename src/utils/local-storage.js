@@ -1,7 +1,7 @@
-const getTodosFromStorage = () =>
-  JSON.parse(window.localStorage.getItem('todos'))
+const getStateFromStorage = () =>
+  JSON.parse(window.localStorage.getItem('todoapp'))
 
-const setTodosInStorage = (todos) =>
-  window.localStorage.setItem('todos', JSON.stringify(todos))
+const storeStateInStorage = (state) =>
+  window.localStorage.setItem('todoapp', JSON.stringify(state))
 
-export {getTodosFromStorage, setTodosInStorage}
+export {getStateFromStorage, storeStateInStorage}

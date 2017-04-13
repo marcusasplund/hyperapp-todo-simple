@@ -1,7 +1,7 @@
-import {getTodosFromStorage} from '../utils/local-storage'
+import {getStateFromStorage} from '../utils/local-storage'
 
-export const state = {
+export const state = getStateFromStorage() || {
   input: '',
   placeholder: 'Add new todo',
-  todos: getTodosFromStorage() || []
+  todos: []
 }
