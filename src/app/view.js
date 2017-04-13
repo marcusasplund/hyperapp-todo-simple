@@ -2,5 +2,5 @@
 import {h} from 'hyperapp'
 import {TodoMain} from '../views/todo-main'
 
-export const view = (model, actions) =>
-  <TodoMain model={model} actions={actions} />
+export const view = (state, actions) =>
+  <TodoMain state={state} actions={actions} />

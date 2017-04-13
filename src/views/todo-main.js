@@ -4,13 +4,13 @@ import {HeaderView} from './header-view'
 import {TodoList} from './todo-list'
 import {TodoInput} from './todo-input'
 import {TodoListDone} from './todo-list-done'
-import {ModelDisplay} from './model-display'
+import {StateDisplay} from './state-display'
 
-export const TodoMain = ({model, actions}) =>
+export const TodoMain = ({state, actions}) =>
   <div class='container'>
     <HeaderView />
-    <TodoList model={model} actions={actions} />
-    <TodoInput model={model} actions={actions} />
-    <TodoListDone model={model} actions={actions} />
-    <ModelDisplay model={model} />
+    <TodoList state={state} actions={actions} />
+    <TodoInput state={state} actions={actions} />
+    <TodoListDone state={state} actions={actions} />
+    <StateDisplay state={state} />
   </div>
