@@ -1,6 +1,15 @@
 
-@import "normalize";
-@import "milligram";
+@import 'normalize';
+@import 'Color';
+@import 'Base';
+@import 'Button';
+@import 'Code';
+@import 'Divider';
+@import 'Form';
+@import 'Grid';
+@import 'Link';
+@import 'Spacing';
+@import 'Typography';
 
 button {
   margin-right: 5px;
