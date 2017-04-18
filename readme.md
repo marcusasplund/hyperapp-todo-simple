@@ -13,7 +13,8 @@
 
 ## [demo](https://pap.as/hyperapp/todo/)
 
-Add some todos, click buttons to delete or toggle state, tap or click text in todo to edit
+Add some todos, click buttons to delete or toggle state, tap or click text in todo to edit.
+Offline support with service worker
 
 ## installation
 
