@@ -15,6 +15,15 @@ const src = {
   vendor: []
 }
 
+export async function cache (fly) {
+  await fly.source('release/**/*.{js,html,css,png,jpg,gif}')
+    .precache({
+      cacheId: 'hyperapp-todo',
+      stripPrefix: 'release/'
+    })
+    .target('release')
+}
+
 export async function clean (fly) {
   await fly.clear([target, releaseTarget])
 }
@@ -77,6 +86,7 @@ export async function release (fly) {
     ignores: ['.html', '.png', '.svg', '.ico', '.json', '.txt']
   }).revManifest({dest: releaseTarget, trim: target}).revReplace().target(releaseTarget)
   await fly.source(`${releaseTarget}/*.html`).htmlmin().target(releaseTarget)
+  await fly.serial(['cache'])
 }
 
 export async function watch (fly) {
