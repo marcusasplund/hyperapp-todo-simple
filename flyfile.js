@@ -16,7 +16,7 @@ const src = {
 }
 
 export async function cache (fly) {
-  await fly.source('release/**/*.{js,html,css,png,jpg,gif}')
+  await fly.source('release/**/*.{js,html,css,png,jpg,gif,woff,woff2}')
     .precache({
       cacheId: 'hyperapp-todo',
       stripPrefix: 'release/'
@@ -83,7 +83,7 @@ export async function release (fly) {
     }
   }).target(target)
   await fly.source(`${target}/**/*`).rev({
-    ignores: ['.html', '.png', '.svg', '.ico', '.json', '.txt']
+    ignores: ['.html', '.png', '.svg', '.ico', '.json', '.txt', '.ttf', '.otf', '.woff', '.woff2']
   }).revManifest({dest: releaseTarget, trim: target}).revReplace().target(releaseTarget)
   await fly.source(`${releaseTarget}/*.html`).htmlmin().target(releaseTarget)
   await fly.serial(['cache'])
