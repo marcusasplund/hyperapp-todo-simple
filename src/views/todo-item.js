@@ -5,12 +5,12 @@ import {ToggleButton} from './toggle-button'
 
 export const TodoItem = ({actions, todo}) =>
   <div class='item row'>
-    <div class='column column-15'>
+    <div class='left'>
       <RemoveButton actions={actions} id={todo.id} />
       <ToggleButton actions={actions} id={todo.id} />
     </div>
     <div
-      class={todo.done ? 'done column column-85' : 'column column-85'}
+      class={todo.done ? 'done right' : 'right'}
       contenteditable
       data-uuid={todo.id}
       onkeyup={e => e.keyCode === 13 ? actions.editEnter(e) : null}

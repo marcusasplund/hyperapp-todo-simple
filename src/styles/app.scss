@@ -14,6 +14,9 @@
 button {
   margin-right: 5px;
 }
+header {
+  padding-top: 5rem;
+}
 [contenteditable]:focus {
   outline: 0px solid transparent;
   border: 1px solid #9b4dca;
@@ -31,12 +34,13 @@ button {
   color: gray;
   text-decoration: line-through;
 }
-
-.row .column.column-15 {
-    flex: 0 0 15%;
-    max-width: 15%;
+.row {
+  display: flex;
+  flex-direction: row;
 }
-.row .column.column-85 {
-    flex: 0 0 85%;
-    max-width: 85%;
+.left {
+  width: 10rem;
+}
+.right {
+  flex:1;
 }
