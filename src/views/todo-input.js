@@ -6,7 +6,7 @@ export const TodoInput = ({state, actions}) =>
     <input
       type='text'
       onkeyup={e => e.keyCode === 13 && e.target.value !== '' ? actions.add() : null}
-      oninput={e => actions.input({value: e.target.value})}
+      oninput={actions.input}
       value={state.input}
       placeholder={state.placeholder} />
   </div>
