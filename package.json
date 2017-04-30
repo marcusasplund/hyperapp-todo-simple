@@ -1,6 +1,6 @@
 {
   "name": "hyperapp-todo-simple",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Marcus Asplund <marcus@greatname.se> (@marcusasplund)",
   "license": "MIT",
   "scripts": {
@@ -40,6 +40,6 @@
     "serve": "^5.1.2"
   },
   "dependencies": {
-    "hyperapp": "^0.8.1"
+    "hyperapp": "^0.9.0"
   }
 }
