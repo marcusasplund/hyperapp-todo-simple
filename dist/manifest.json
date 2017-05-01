@@ -1,0 +1,26 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "HyperApp ToDo",
+  "scope": "./",
+  "display": "fullscreen",
+  "start_url": "./",
+  "short_name": "ToDo",
+  "theme_color": "white",
+  "description": "simple crud todo app",
+  "orientation": "portrait",
+  "background_color": "white",
+  "icons": [{
+    "src": "./apple-touch-icon.png",
+    "sizes": "180x180",
+    "type": "image/png"
+  },{
+    "src": "./android-chrome-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },{
+    "src": "./android-chrome-512x512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}
