@@ -2,7 +2,6 @@ language: node_js
 node_js:
   - "7"
   - "6"
-  - "node"
 
 sudo: false
 
@@ -11,3 +10,4 @@ install:
 
 script:
   - npm run build
+
