@@ -24,9 +24,9 @@ Offline support with service worker
 
     $ cd hyperapp-todo-simple
 
-    $ yarn OR $ npm install
+    $ yarn
 
-    $ npm start
+    $ yarn start
 ````
 
 Open up application at http://localhost:4000/ in browser
@@ -34,7 +34,7 @@ Open up application at http://localhost:4000/ in browser
 ## build a release
 
 ````bash
-    $ npm run build
+    $ yarn run build
 
 ````
 This will generate a release directory with your minified/rev'd assets.
@@ -43,7 +43,7 @@ This will generate a release directory with your minified/rev'd assets.
 ## serve static
 
 ````bash
-    $ npm run serve
+    $ yarn run serve
 
 ````
 
