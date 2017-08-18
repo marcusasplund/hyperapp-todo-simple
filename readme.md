@@ -51,4 +51,4 @@ This will use serve to statically serve your app from the release directory.
 
 ## Credits
 
-The rollup and fly config is based on https://github.com/tzellman/hyperapp-boilerplate
+The rollup and taskr config is based on https://github.com/tzellman/hyperapp-boilerplate

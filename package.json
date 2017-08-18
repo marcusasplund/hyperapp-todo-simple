@@ -1,11 +1,11 @@
 {
   "name": "hyperapp-todo-simple",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Marcus Asplund <marcus@greatname.se> (@marcusasplund)",
   "license": "MIT",
   "scripts": {
-    "build": "fly build release",
-    "start": "fly watch",
+    "build": "taskr build release",
+    "start": "taskr watch",
     "preserve": "npm run build",
     "serve": "serve release -s -p 4000"
   },
@@ -19,27 +19,27 @@
   },
   "homepage": "https://github.com/marcusasplund/hyperapp-todo-simple#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "fly": "^2.0.6",
-    "fly-autoprefixer": "^1.1.0",
-    "fly-clear": "^1.0.1",
-    "fly-concat": "^1.2.0",
-    "fly-esnext": "^2.0.1",
-    "fly-htmlmin": "^2.1.0",
+    "browser-sync": "^2.18.13",
+    "taskr": "^1.1.0",
+    "taskr-autoprefixer": "^1.0.0",
+    "@taskr/clear": "^1.1.0",
+    "@taskr/concat": "^1.1.0",
+    "@taskr/esnext": "^1.1.0",
+    "@taskr/htmlmin": "^1.1.0",
     "fly-precache": "^2.1.0",
-    "fly-rev": "^2.2.1",
+    "@taskr/rev": "^1.1.0",
     "fly-rollup": "^2.1.0",
-    "fly-sass": "^2.1.0",
-    "fly-uglify": "^2.1.1",
-    "fly-watch": "^1.1.1",
-    "rollup": "^0.41.6",
+    "@taskr/sass": "^1.1.0",
+    "@taskr/uglify": "^1.1.0",
+    "@taskr/watch": "^1.1.0",
+    "rollup": "^0.47.6",
     "rollup-plugin-buble": "^0.15.0",
-    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-commonjs": "^8.1.0",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-replace": "^1.1.1",
-    "serve": "^5.2.2"
+    "serve": "^6.0.6"
   },
   "dependencies": {
-    "hyperapp": "^0.9.2"
+    "hyperapp": "^0.11.0"
   }
 }

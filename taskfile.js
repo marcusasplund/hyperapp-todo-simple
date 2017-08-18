@@ -11,12 +11,11 @@ const src = {
   staticAssets: [
     'src/static/**/*.*',
     'src/*.html'
-  ],
-  vendor: []
+  ]
 }
 
-export async function cache (fly) {
-  await fly.source('release/**/*.{js,html,css,png,jpg,gif,woff,woff2}')
+export async function cache (task) {
+  await task.source('release/**/*.{js,html,css,png,jpg,gif,woff,woff2}')
     .precache({
       cacheId: 'hyperapp-todo',
       stripPrefix: 'release/'
@@ -24,20 +23,16 @@ export async function cache (fly) {
     .target('release')
 }
 
-export async function clean (fly) {
-  await fly.clear([target, releaseTarget])
+export async function clean (task) {
+  await task.clear([target, releaseTarget])
 }
 
-export async function copyStaticAssets (fly, o) {
-  await fly.source(o.src || src.staticAssets).target(target)
+export async function copyStaticAssets (task, o) {
+  await task.source(o.src || src.staticAssets).target(target)
 }
 
-export async function vendors (fly) {
-  await fly.source(src.vendor).concat('vendor.js').target(`${target}`)
-}
-
-export async function js (fly) {
-  await fly.source('src/app/index.js').rollup({
+export async function js (task) {
+  await task.source('src/app/index.js').rollup({
     rollup: {
       plugins: [
         require('rollup-plugin-buble')({jsx: 'h'}),
@@ -59,20 +54,20 @@ export async function js (fly) {
   }).target(`${target}`)
 }
 
-export async function styles (fly) {
-  await fly.source(src.scss).sass({
+export async function styles (task) {
+  await task.source(src.scss).sass({
     outputStyle: 'compressed',
     includePaths: []
   }).autoprefixer().target(`${target}`)
 }
 
-export async function build (fly) {
+export async function build (task) {
     // TODO add linting
-  await fly.serial(['clean', 'copyStaticAssets', 'styles', 'js', 'vendors'])
+  await task.serial(['clean', 'copyStaticAssets', 'styles', 'js'])
 }
 
-export async function release (fly) {
-  await fly.source(`${target}/*.js`).uglify({
+export async function release (task) {
+  await task.source(`${target}/*.js`).uglify({
     compress: {
       conditionals: 1,
       drop_console: 1,
@@ -82,23 +77,23 @@ export async function release (fly) {
       loops: 1
     }
   }).target(target)
-  await fly.source(`${target}/**/*`).rev({
+  await task.source(`${target}/**/*`).rev({
     ignores: ['.html', '.png', '.svg', '.ico', '.xml', '.json', '.txt', '.ttf', '.otf', '.woff', '.woff2']
   }).revManifest({dest: releaseTarget, trim: target}).revReplace().target(releaseTarget)
-  await fly.source(`${releaseTarget}/*.html`).htmlmin().target(releaseTarget)
-  await fly.serial(['cache'])
+  await task.source(`${releaseTarget}/*.html`).htmlmin().target(releaseTarget)
+  await task.serial(['cache'])
 }
 
-export async function watch (fly) {
+export async function watch (task) {
   isWatching = true
-  await fly.start('build')
-  await fly.watch(src.js, ['js', 'reload'])
-  await fly.watch(src.scss, ['styles', 'reload'])
-  await fly.watch(src.staticAssets, ['copyStaticAssets', 'reload'])
+  await task.start('build')
+  await task.watch(src.js, ['js', 'reload'])
+  await task.watch(src.scss, ['styles', 'reload'])
+  await task.watch(src.staticAssets, ['copyStaticAssets', 'reload'])
   // start server
   browserSync({
     server: target,
-    logPrefix: 'hyperapp',
+    logPrefix: 'hyperapp-todo',
     port: process.env.PORT || 4000,
     middleware: [
       require('connect-history-api-fallback')()
@@ -106,6 +101,6 @@ export async function watch (fly) {
   })
 }
 
-export async function reload (fly) {
+export async function reload (task) {
   isWatching && browserSync.reload()
 }
