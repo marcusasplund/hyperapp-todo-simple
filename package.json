@@ -6,7 +6,7 @@
   "scripts": {
     "build": "taskr build release",
     "start": "taskr watch",
-    "preserve": "npm run build",
+    "preserve": "yarn run build",
     "serve": "serve release -s -p 4000"
   },
   "main": "src/app/index.js",
@@ -40,6 +40,6 @@
     "serve": "^6.0.6"
   },
   "dependencies": {
-    "hyperapp": "^0.11.0"
+    "hyperapp": "^0.12.1"
   }
 }
