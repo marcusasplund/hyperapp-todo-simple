@@ -28,6 +28,12 @@
   dependencies:
     html-minifier "^3.5.0"
 
+"@taskr/postcss@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@taskr/postcss/-/postcss-1.1.2.tgz#dc29ebbcee9a28ce87c3a915b9525fc8cc2bb275"
+  dependencies:
+    postcss "^6.0.0"
+
 "@taskr/rev@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@taskr/rev/-/rev-1.1.0.tgz#a1981615f155efea5e059a3483626509de6584f4"
@@ -233,7 +239,7 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
-autoprefixer@^7.1.1:
+autoprefixer@^7.1.4:
   version "7.1.4"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-7.1.4.tgz#960847dbaa4016bc8e8e52ec891cbf8f1257a748"
   dependencies:
@@ -2368,7 +2374,7 @@ postcss-value-parser@^3.2.3:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.0.tgz#87f38f9f18f774a4ab4c8a232f5c5ce8872a9d15"
 
-postcss@^6.0.11, postcss@^6.0.2:
+postcss@^6.0.0, postcss@^6.0.11:
   version "6.0.12"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.12.tgz#6b0155089d2d212f7bd6a0cecd4c58c007403535"
   dependencies:
@@ -3085,13 +3091,6 @@ tar@^2.0.0, tar@^2.2.1:
     block-stream "*"
     fstream "^1.0.2"
     inherits "2"
-
-taskr-autoprefixer@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/taskr-autoprefixer/-/taskr-autoprefixer-1.0.0.tgz#63c2e804dc48610d4a03680717c34ea208ebe8ab"
-  dependencies:
-    autoprefixer "^7.1.1"
-    postcss "^6.0.2"
 
 taskr@^1.1.0:
   version "1.1.0"

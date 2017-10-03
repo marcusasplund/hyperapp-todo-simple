@@ -58,7 +58,12 @@ export async function styles (task) {
   await task.source(src.scss).sass({
     outputStyle: 'compressed',
     includePaths: []
-  }).autoprefixer().target(`${target}`)
+  })
+  .postcss({
+    plugins: [require('autoprefixer')({
+      browsers: ['last 2 versions']
+    })]
+  }).target(`${target}`)
 }
 
 export async function build (task) {
