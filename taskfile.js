@@ -32,7 +32,7 @@ export async function copyStaticAssets (task, o) {
 }
 
 export async function js (task) {
-  await task.source('src/app/index.js').rollup({
+  await task.source('src/app.js').rollup({
     rollup: {
       plugins: [
         require('rollup-plugin-buble')({jsx: 'h'}),

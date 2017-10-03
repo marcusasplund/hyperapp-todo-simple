@@ -1,7 +1,7 @@
 language: node_js
 node_js:
+  - "8"
   - "7"
-  - "6"
 
 sudo: false
 
@@ -10,4 +10,3 @@ install:
 
 script:
   - yarn run build
-
