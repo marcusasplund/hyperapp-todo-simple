@@ -1386,9 +1386,9 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-hyperapp@^0.12.1:
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/hyperapp/-/hyperapp-0.12.1.tgz#6dc951d948d44bf800a05c072a31a08becb190df"
+hyperapp@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/hyperapp/-/hyperapp-0.14.0.tgz#f5aac800be828f665e7e00a82cbc80b3c8cd4101"
 
 iconv-lite@0.4.19:
   version "0.4.19"

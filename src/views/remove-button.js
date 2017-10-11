@@ -3,6 +3,7 @@ import {h} from 'hyperapp'
 
 export const RemoveButton = ({id, actions}) =>
   <button
+    aria-label='Remove'
     class='button button-small button-outline'
     data-uuid={id}
     onclick={e => actions.remove(e)}>x

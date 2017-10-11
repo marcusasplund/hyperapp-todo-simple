@@ -8,8 +8,8 @@ export const HeaderView = () =>
       <em>
         <small>tap text to edit todo
         </small>
-      </em>{' '}
-      <a href='https://github.com/marcusasplund/hyperapp-todo-simple/'>
+      </em>
+      <a href='https://github.com/marcusasplund/hyperapp-todo-simple/'>{' '}
         <small>source
         </small>
       </a>
