@@ -3,8 +3,8 @@ import {h} from 'hyperapp'
 import {storeStateInStorage} from '../utils/local-storage'
 
 export const StateDisplay = ({state}) =>
-  <pre onupdate={storeStateInStorage(state)}>
-    <code>
+  <pre>
+    <code onupdate={storeStateInStorage(state)}>
       {JSON.stringify(state, null, 2)}
     </code>
   </pre>

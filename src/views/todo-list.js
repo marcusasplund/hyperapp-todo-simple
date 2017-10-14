@@ -3,7 +3,7 @@ import {h} from 'hyperapp'
 import {TodoItem} from './todo-item'
 
 export const TodoList = ({state, actions}) =>
-  <div id='todo-list'>
+  <div>
     {
       state.todos
         .filter(todo => !todo.done)
