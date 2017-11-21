@@ -8,19 +8,19 @@ export const actions = {
     input: '',
     todos: addTodo(state)
   }),
-  input: (state, actions, e) => ({
+  input: (state, actions) => (e) => ({
     input: e.target.value
   }),
-  remove: (state, actions, e) => ({
+  remove: (state, actions) => (e) => ({
     todos: removeTodo(state, e)
   }),
-  toggle: (state, actions, e) => ({
+  toggle: (state, actions) => (e) => ({
     todos: toggleTodo(state, e)
   }),
-  edit: (state, actions, e) => ({
+  edit: (state, actions) => (e) => ({
     todos: editTodo(state, e)
   }),
-  editEnter: (state, actions, e) => {
+  editEnter: (state, actions) => (e) => {
     e.target.blur()
   }
 }

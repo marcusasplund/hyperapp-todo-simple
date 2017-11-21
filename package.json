@@ -1,7 +1,7 @@
 {
   "homepage": "https://github.com/marcusasplund/hyperapp-todo-simple#readme",
   "license": "MIT",
-  "main": "src/app.js",
+  "main": "src/index.js",
   "name": "hyperapp-todo-simple",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
     "serve": "serve release -s -p 4000",
     "start": "taskr watch"
   },
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "Marcus Asplund <marcus@greatname.se> (@marcusasplund)",
   "bugs": {
     "url": "https://github.com/marcusasplund/hyperapp-todo-simple/issues"
@@ -30,15 +30,15 @@
     "@taskr/watch": "^1.1.0",
     "autoprefixer": "^7.1.4",
     "browser-sync": "^2.18.13",
-    "fly-precache": "^2.1.0",
-    "fly-rollup": "^2.1.0",
     "rollup": "^0.51.2",
     "rollup-plugin-buble": "^0.18.0",
     "rollup-plugin-commonjs": "^8.1.0",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-replace": "^2.0.0",
     "serve": "^6.0.6",
-    "taskr": "^1.1.0"
+    "taskr": "^1.1.0",
+    "taskr-standard": "^1.0.1",
+    "workbox-build": "^2.1.2"
   },
   "dependencies": {
     "hyperapp": "^0.16.0"
