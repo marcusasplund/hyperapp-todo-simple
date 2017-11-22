@@ -12,9 +12,4 @@ app({
   document.getElementById('todo')
 )
 
-// Register service worker if not on localhost
-const local = window.location.host.startsWith('localhost')
-
-if ('serviceWorker' in navigator && !local) {
-  registerWorker()
-}
+registerWorker()
