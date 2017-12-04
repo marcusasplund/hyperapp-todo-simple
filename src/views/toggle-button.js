@@ -6,5 +6,5 @@ export const ToggleButton = ({id, actions}) =>
     aria-label='Toggle'
     class='button button-small button-outline'
     data-uuid={id}
-    onclick={e => actions.toggle(e)}>✓
+    onclick={actions.toggle}>✓
   </button>
