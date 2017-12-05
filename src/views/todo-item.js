@@ -15,7 +15,7 @@ export const TodoItem = ({actions, todo}) =>
       data-uuid={todo.id}
       onkeyup={e => e.keyCode === 13 ? actions.editEnter(e) : null}
       oninput={e => (todo.value = e.target.textContent || '')}
-      onblur={actions.edit}>
+      onblur={e => actions.edit(e)}>
       {todo.value}
     </div>
   </div>
