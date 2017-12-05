@@ -18,6 +18,7 @@ export const actions = {
     todos: editTodo(state, e)
   }),
   editEnter: e => state => actions => {
+    e.preventDefault()
     e.target.blur()
   }
 }

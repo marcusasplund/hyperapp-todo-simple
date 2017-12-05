@@ -11,9 +11,22 @@ export const TodoItem = ({actions, todo}) =>
     </div>
     <div
       class={todo.done ? 'done right' : 'right'}
-      contenteditable={!todo.done}
+      // Prevent extra <div> elements inserted in contenteditable
+      onclick={e => {
+        if (!todo.done) {
+          e.target.contentEditable = true
+          e.target.focus()
+        }
+      }
+    }
+      onkeydown={e => {
+        if (e.keyCode === 13) {
+          e.target.contentEditable = false
+          actions.editEnter(e)
+        }
+      }
+    }
       data-uuid={todo.id}
-      onkeyup={e => e.keyCode === 13 ? actions.editEnter(e) : null}
       oninput={e => (todo.value = e.target.textContent || '')}
       onblur={e => actions.edit(e)}>
       {todo.value}
