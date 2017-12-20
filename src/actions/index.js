@@ -4,20 +4,20 @@ import {toggleTodo} from './toggle-todo'
 import {editTodo} from './edit-todo'
 
 export const actions = {
-  add: todos => state => addTodo(state),
-  input: value => state => ({
+  add: (todos) => state => addTodo(state),
+  input: (value) => state => ({
     input: value
   }),
-  remove: e => state => actions => ({
+  remove: (e) => state => ({
     todos: removeTodo(state, e)
   }),
-  toggle: e => state => actions => ({
+  toggle: (e) => state => ({
     todos: toggleTodo(state, e)
   }),
-  edit: e => state => actions => ({
+  edit: (e) => state => ({
     todos: editTodo(state, e)
   }),
-  editEnter: e => state => actions => {
+  editEnter: (e) => state => {
     e.preventDefault()
     e.target.blur()
   }

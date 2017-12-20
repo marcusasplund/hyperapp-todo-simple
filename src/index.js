@@ -4,12 +4,7 @@ import {state} from './state/'
 import {view} from './views/'
 import {registerWorker} from './utils/register-worker'
 
-app({
-  actions,
-  state,
-  view
-},
-  document.getElementById('todo')
-)
+window.main = app(state, actions, view, document.getElementById('todo'))
 
+registerWorker()
 registerWorker()
