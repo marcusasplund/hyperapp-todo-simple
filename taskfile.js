@@ -102,7 +102,7 @@ export async function build (task) {
 }
 
 export async function release (task) {
-  await task.source(`${target}/*.js`).uglify({
+  await task.source(`${target}/index.js`).uglify({
     compress: {
       conditionals: 1,
       drop_console: 1,
