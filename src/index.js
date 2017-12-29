@@ -7,4 +7,3 @@ import {registerWorker} from './utils/register-worker'
 window.main = app(state, actions, view, document.getElementById('todo'))
 
 registerWorker()
-registerWorker()
