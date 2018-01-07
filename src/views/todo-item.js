@@ -3,7 +3,7 @@ import {h} from 'hyperapp'
 import {RemoveButton} from './remove-button'
 import {ToggleButton} from './toggle-button'
 
-export const TodoItem = ({actions, todo}) =>
+export const TodoItem = ({actions, todo}) => (
   <div class='item row'>
     <div class='left'>
       <RemoveButton actions={actions} id={todo.id} />
@@ -32,3 +32,4 @@ export const TodoItem = ({actions, todo}) =>
       {todo.value}
     </div>
   </div>
+)

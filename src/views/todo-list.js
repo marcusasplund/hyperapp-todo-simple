@@ -2,11 +2,8 @@
 import {h} from 'hyperapp'
 import {TodoItem} from './todo-item'
 
-export const TodoList = ({state, actions}) =>
-  <div>
-    {
-      state.todos
-        .filter(todo => !todo.done)
-        .map(todo => <TodoItem todo={todo} actions={actions} />)
-    }
-  </div>
+export const TodoList = ({state, actions}) => (
+  state.todos
+    .filter(todo => !todo.done)
+    .map(todo => <TodoItem todo={todo} actions={actions} />)
+)

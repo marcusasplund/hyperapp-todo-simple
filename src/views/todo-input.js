@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import {h} from 'hyperapp'
 
-export const TodoInput = ({state, actions}) =>
+export const TodoInput = ({state, actions}) => (
   <div class='row'>
     <input
       type='text'
@@ -11,3 +11,4 @@ export const TodoInput = ({state, actions}) =>
       value={state.input}
       placeholder={state.placeholder} />
   </div>
+)

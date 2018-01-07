@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import {h} from 'hyperapp'
 
-export const HeaderView = () =>
+export const HeaderView = () => (
   <header>
     <h2>todo</h2>
     <p>
@@ -15,3 +15,4 @@ export const HeaderView = () =>
       </a>
     </p>
   </header>
+)
