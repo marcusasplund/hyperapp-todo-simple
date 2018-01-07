@@ -6,7 +6,7 @@ export const TodoInput = ({state, actions}) =>
     <input
       type='text'
       aria-label={state.placeholder}
-      onkeyup={({target: {value}, keyCode}) => keyCode === 13 && value !== '' ? actions.add() && actions.input('') : null}
+      onkeyup={({target: {value}, keyCode}) => keyCode === 13 && value !== '' ? actions.add() : null}
       oninput={({target: {value}}) => actions.input(value)}
       value={state.input}
       placeholder={state.placeholder} />
