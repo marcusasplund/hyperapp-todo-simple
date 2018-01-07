@@ -41,6 +41,6 @@
     "workbox-build": "^2.1.2"
   },
   "dependencies": {
-    "hyperapp": "^1.0.0"
+    "hyperapp": "^1.0.1"
   }
 }
