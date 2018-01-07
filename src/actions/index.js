@@ -4,7 +4,10 @@ import {toggleTodo} from './toggle-todo'
 import {editTodo} from './edit-todo'
 
 export const actions = {
-  add: (todos) => state => addTodo(state),
+  add: () => state => ({
+    input: '',
+    todos: addTodo(state)
+  }),
   input: (value) => state => ({
     input: value
   }),
