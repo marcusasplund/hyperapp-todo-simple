@@ -94,7 +94,7 @@ export async function styles (task) {
       plugins: [require('autoprefixer')({
         browsers: ['last 2 versions']
       })]
-  })
+    })
     .target(`${target}`)
 }
 
