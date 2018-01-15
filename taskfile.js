@@ -29,18 +29,18 @@ export async function cache () {
     swDest: `${releaseTarget}/sw.js`,
     globPatterns: ['**/*.{js,html,css,png,jpg,gif,woff,woff2}']
   })
-  .then(() => {
-    console.log('Service worker generated.')
-  })
-  .catch((err) => {
-    console.log('[ERROR] This happened: ' + err)
-  })
+    .then(() => {
+      console.log('Service worker generated.')
+    })
+    .catch((err) => {
+      console.log('[ERROR] This happened: ' + err)
+    })
 }
 
 export async function lint (task) {
   await task.source(src.js)
-  .standard()
-  .target(`${target}`)
+    .standard()
+    .target(`${target}`)
 }
 
 export async function clean (task) {
@@ -90,11 +90,12 @@ export async function styles (task) {
     outputStyle: 'compressed',
     includePaths: ['']
   })
-  .postcss({
-    plugins: [require('autoprefixer')({
-      browsers: ['last 2 versions']
-    })]
-  }).target(`${target}`)
+    .postcss({
+      plugins: [require('autoprefixer')({
+        browsers: ['last 2 versions']
+      })]
+  })
+    .target(`${target}`)
 }
 
 export async function build (task) {
