@@ -11,7 +11,7 @@ export async function reload (task) {
 
 const target = 'dist'
 const releaseTarget = 'release'
-const applicationId = 'hyperapp-todo-simple'
+const applicationId = 'hyperapp-todo-simple8'
 
 const src = {
   js: 'src/**/*.js',
