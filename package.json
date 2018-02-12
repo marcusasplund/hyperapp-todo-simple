@@ -28,7 +28,7 @@
     "@taskr/sass": "^1.1.0",
     "@taskr/uglify": "^1.1.0",
     "@taskr/watch": "^1.1.0",
-    "autoprefixer": "^7.2.6",
+    "autoprefixer": "^8.0.0",
     "browser-sync": "^2.23.6",
     "rollup": "^0.55.5",
     "rollup-plugin-buble": "^0.19.0",
