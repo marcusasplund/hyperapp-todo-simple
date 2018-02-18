@@ -27,7 +27,7 @@ export async function cache () {
     cacheId: `${applicationId}`,
     globDirectory: `${releaseTarget}/`,
     swDest: `${releaseTarget}/sw.js`,
-    globPatterns: ['**/*.{js,html,css,png,jpg,gif,woff,woff2}']
+    globPatterns: ['*.{js,html,css,png}']
   })
     .then(() => {
       console.log('Service worker generated.')
@@ -114,7 +114,7 @@ export async function release (task) {
     }
   }).target(target)
   await task.source(`${target}/**/*`).rev({
-    ignores: ['.html', '.png', '.svg', '.ico', '.xml', '.json', '.txt', '.ttf', '.otf', '.woff', '.woff2']
+    ignores: ['.html', '.png', '.svg', '.ico', '.xml', '.json']
   }).revManifest({dest: releaseTarget, trim: target}).revReplace().target(releaseTarget)
   await task.source(`${releaseTarget}/*.html`).htmlmin().target(releaseTarget)
   await task.serial(['cache'])
