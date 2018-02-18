@@ -6,6 +6,6 @@ export const RemoveButton = ({id, actions}) => (
     aria-label='Remove'
     class='button button-small button-outline'
     data-uuid={id}
-    onclick={actions.remove}>x
+    onclick={e => actions.remove(e)}>x
   </button>
 )

@@ -5,6 +5,7 @@ export const TodoInput = ({state, actions}) => (
   <div class='row'>
     <input
       type='text'
+      oncreate={element => element.focus()}
       aria-label={state.placeholder}
       onkeyup={({target: {value}, keyCode}) => keyCode === 13 && value !== '' ? actions.add() : null}
       oninput={({target: {value}}) => actions.input(value)}
