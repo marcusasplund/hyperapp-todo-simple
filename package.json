@@ -13,7 +13,7 @@
     "serve": "serve release -s -p 4000",
     "start": "taskr watch"
   },
-  "version": "0.0.8",
+  "version": "0.0.9",
   "author": "Marcus Asplund <marcus@greatname.se> (@marcusasplund)",
   "bugs": {
     "url": "https://github.com/marcusasplund/hyperapp-todo-simple/issues"
