@@ -38,7 +38,7 @@
     "serve": "^6.4.9",
     "taskr": "^1.1.0",
     "taskr-standard": "^1.0.1",
-    "workbox-build": "^2.1.2"
+    "workbox-build": "^3.0.0"
   },
   "dependencies": {
     "hyperapp": "^1.1.2"
