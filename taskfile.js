@@ -37,12 +37,6 @@ export async function cache () {
     })
 }
 
-export async function lint (task) {
-  await task.source(src.js)
-    .standard()
-    .target(`${target}`)
-}
-
 export async function clean (task) {
   await task.clear([target, releaseTarget])
 }
@@ -99,7 +93,7 @@ export async function styles (task) {
 }
 
 export async function build (task) {
-  await task.serial(['clean', 'copyStaticAssets', 'styles', 'lint', 'js'])
+  await task.serial(['clean', 'copyStaticAssets', 'styles', 'js'])
 }
 
 export async function release (task) {
