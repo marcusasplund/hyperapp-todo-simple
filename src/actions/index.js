@@ -1,7 +1,7 @@
-import {addTodo} from './add-todo'
-import {removeTodo} from './remove-todo'
-import {toggleTodo} from './toggle-todo'
-import {editTodo} from './edit-todo'
+import { addTodo } from './add-todo'
+import { removeTodo } from './remove-todo'
+import { toggleTodo } from './toggle-todo'
+import { editTodo } from './edit-todo'
 
 export const actions = {
   add: () => state => ({

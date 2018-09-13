@@ -18,8 +18,6 @@ Add some todos, click buttons to delete or toggle state, tap or click text in to
 
 Offline support with service worker
 
-Also checkout [hyperapp-todo-parcel](https://github.com/marcusasplund/hyperapp-todo-parcel)
-
 ## installation
 
 ````bash
@@ -32,26 +30,12 @@ Also checkout [hyperapp-todo-parcel](https://github.com/marcusasplund/hyperapp-t
     $ yarn start
 ````
 
-Open up application at http://localhost:4000/ in browser
+Open up application at http://localhost:3000/ in browser
 
 ## build a release
 
 ````bash
-    $ yarn run build
+    $ yarn build
 
 ````
 This will generate a release directory with your minified/rev'd assets.
-
-
-## serve static
-
-````bash
-    $ yarn run serve
-
-````
-
-This will use serve to statically serve your app from the release directory.
-
-## Credits
-
-The rollup and taskr config is based on https://github.com/tzellman/hyperapp-boilerplate

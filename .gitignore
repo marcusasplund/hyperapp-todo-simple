@@ -36,3 +36,4 @@ node_modules
 dist
 release
 .cache
+.lock

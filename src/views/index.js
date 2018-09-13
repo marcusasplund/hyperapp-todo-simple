@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
-import {h} from 'hyperapp'
-import {HeaderView} from './header-view'
-import {TodoList} from './todo-list'
-import {TodoInput} from './todo-input'
-import {TodoListDone} from './todo-list-done'
-import {StateDisplay} from './state-display'
+import { h } from 'hyperapp'
+import { HeaderView } from './header-view'
+import { TodoList } from './todo-list'
+import { TodoInput } from './todo-input'
+import { TodoListDone } from './todo-list-done'
+import { StateDisplay } from './state-display'
 
 export const view = (state, actions) => (
   <div class='container'>

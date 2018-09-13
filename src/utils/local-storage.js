@@ -4,4 +4,4 @@ const getStateFromStorage = () =>
 const storeStateInStorage = (state) =>
   window.localStorage.setItem('todoapp8', JSON.stringify(state))
 
-export {getStateFromStorage, storeStateInStorage}
+export { getStateFromStorage, storeStateInStorage }

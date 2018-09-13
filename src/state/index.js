@@ -1,4 +1,4 @@
-import {getStateFromStorage} from '../utils/local-storage'
+import { getStateFromStorage } from '../utils/local-storage'
 
 export const state = getStateFromStorage() || {
   input: '',
