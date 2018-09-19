@@ -21,8 +21,8 @@
     "node-sass": "^4.9.3",
     "parcel-bundler": "^1.9.7",
     "standard": "*",
-    "workbox-build": "^3.4.1",
-    "workbox-cli": "^3.4.1"
+    "workbox-build": "^3.5.0",
+    "workbox-cli": "^3.5.0"
   },
   "dependencies": {
     "hyperapp": "^1.2.9"
