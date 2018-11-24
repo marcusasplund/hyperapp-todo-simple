@@ -1,5 +1,5 @@
 # todo
-
+[![Greenkeeper badge](https://badges.greenkeeper.io/marcusasplund/hyperapp-todo-simple.svg)](https://greenkeeper.io/)
 [![GitHub issues](https://img.shields.io/github/issues/marcusasplund/hyperapp-todo-simple.svg)](https://github.com/marcusasplund/hyperapp-todo-simple/issues)
 [![Build status](https://travis-ci.org/marcusasplund/hyperapp-todo-simple.svg?branch=master)](https://travis-ci.org/marcusasplund/hyperapp-todo-simple)
 [![dependencies](https://david-dm.org/marcusasplund/hyperapp-todo-simple.svg)](https://david-dm.org/marcusasplund/hyperapp-todo-simple)
