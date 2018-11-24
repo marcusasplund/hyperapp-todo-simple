@@ -36,15 +36,15 @@
   <script>
   // TODO: remove hacky hack https://github.com/parcel-bundler/parcel/issues/2080
   if ('serviceWorker' in navigator) {
-		const x = 'service-worker.js';
-		navigator.serviceWorker.register(x)
-			.then(function(registration) {
-				console.log('Registration successful, scope is:', registration.scope)
-			})
-			.catch(function(error) {
-				console.log('Service worker registration failed, error:', error)
-			})
-		}
+    const x = 'service-worker.js'
+    navigator.serviceWorker.register(x)
+      .then(function(registration) {
+        console.log('Registration successful, scope is:', registration.scope)
+    })
+      .catch(function(error) {
+         console.log('Service worker registration failed, error:', error)
+    })
+  }
   </script>
 </body>
 </html>
