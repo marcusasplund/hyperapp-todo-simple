@@ -9,20 +9,26 @@
   },
   "scripts": {
     "start": "standard && parcel src/index.html -p 3000 --open",
-    "build": "standard && parcel build src/index.html -d build --public-url ./ && workbox generateSW"
+    "build": "rm -rf /release && standard && parcel build src/index.html -d build --public-url ./"
   },
   "version": "0.2.0",
   "author": "Marcus Asplund <marcus@greatname.se> (@marcusasplund)",
   "bugs": {
     "url": "https://github.com/marcusasplund/hyperapp-todo-simple/issues"
   },
+  "cache": {
+    "inDev": true,
+    "swDest": "service-worker.js"
+  },  
   "devDependencies": {
-    "babel-eslint": "^10.0.0",
-    "node-sass": "^4.9.3",
-    "parcel-bundler": "1.9.7",
-    "standard": "*",
-    "workbox-build": "^3.5.0",
-    "workbox-cli": "^3.5.0"
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "7.1.5",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.10.3",
+    "parcel-plugin-sw-cache": "^0.2.6",
+    "standard": "*"
+    "node-sass": "^4.10.0"
   },
   "dependencies": {
     "hyperapp": "^1.2.9"
