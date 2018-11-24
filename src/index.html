@@ -34,16 +34,17 @@
   </div>
   <script src="./index.js" async></script>
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js')
-      .then(function (registration) {
-        console.log('Service Worker registration successful with scope: ',
-        registration.scope)
-      })
-      .catch(function (err) {
-        console.log('Service Worker registration failed: ', err)
-      })
-    }
+  // TODO: remove hacky hack https://github.com/parcel-bundler/parcel/issues/2080
+  if ('serviceWorker' in navigator) {
+		const x = 'service-worker.js';
+		navigator.serviceWorker.register(x)
+			.then(function(registration) {
+				console.log('Registration successful, scope is:', registration.scope)
+			})
+			.catch(function(error) {
+				console.log('Service worker registration failed, error:', error)
+			})
+		}
   </script>
 </body>
 </html>
