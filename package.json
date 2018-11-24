@@ -27,7 +27,7 @@
     "babel-preset-env": "^1.7.0",
     "parcel-bundler": "^1.10.3",
     "parcel-plugin-sw-cache": "^0.2.6",
-    "standard": "*"
+    "standard": "*",
     "node-sass": "^4.10.0"
   },
   "dependencies": {
