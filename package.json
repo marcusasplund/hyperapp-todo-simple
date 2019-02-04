@@ -22,13 +22,12 @@
   },  
   "devDependencies": {
     "@babel/core": "^7.2.2",
-    "@babel/preset-env": "7.2.3",
+    "@babel/preset-env": "^7.3.1",
     "babel-eslint": "^10.0.1",
-    "babel-preset-env": "^1.7.0",
-    "parcel-bundler": "^1.10.3",
+    "parcel-bundler": "^1.11.0",
     "parcel-plugin-sw-cache": "^0.2.6",
     "standard": "*",
-    "node-sass": "^4.10.0"
+    "node-sass": "^4.11.0"
   },
   "dependencies": {
     "hyperapp": "^1.2.9"
