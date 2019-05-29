@@ -27,7 +27,7 @@
     "parcel-bundler": "^1.11.0",
     "parcel-plugin-sw-cache": "^0.2.7",
     "standard": "*",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.12.0"
   },
   "dependencies": {
     "hyperapp": "^1.2.9"
