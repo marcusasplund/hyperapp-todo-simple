@@ -30,6 +30,6 @@
     "node-sass": "^4.12.0"
   },
   "dependencies": {
-    "hyperapp": "^1.2.9"
+    "hyperapp": "^2.0.0"
   }
 }
