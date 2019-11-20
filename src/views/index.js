@@ -9,8 +9,9 @@ import { StateDisplay } from './state-display'
 export const View = state =>
   <div class='container'>
     <HeaderView />
-    <TodoList items={state.items} />
     <TodoInput state={state} />
+    <TodoList items={state.items} />
+    <hr />
     <TodoListDone items={state.items} />
     <StateDisplay state={state} />
   </div>

@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "standard && parcel src/index.html -p 3000 --open",
-    "build": "rm -rf release && standard && parcel build src/index.html -d build --public-url ./"
+    "build": "rm -rf release && standard && parcel release src/index.html -d release --public-url ./"
   },
   "version": "0.3.0",
   "author": "Marcus Asplund <marcus@greatname.se> (@marcusasplund)",
@@ -20,10 +20,18 @@
     "inDev": true,
     "swDest": "service-worker.js"
   },
+  "standard": {
+  "parser": "babel-eslint",
+    "ignore": [
+      "dist/",
+      "release/"
+    ]
+  },
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-sw-cache": "^0.3.1",
+    "babel-eslint": "^10.0.3",
     "sass": "^1.22.12",
     "standard": "*"
   },
