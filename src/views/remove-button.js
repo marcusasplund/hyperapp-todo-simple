@@ -1,11 +1,20 @@
 /* eslint-disable no-unused-vars */
 import { h } from 'hyperapp'
+import { storeStateInStorage } from '../utils/local-storage'
 
-export const RemoveButton = ({ id, actions }) => (
+const RemoveTodo = (state, e) => {
+  const items = state.items.filter(t => e.target.dataset.uuid !== t.id)
+  const newState = { ...state, ...{ items: items } }
+  storeStateInStorage(newState)
+  return newState
+}
+
+export const RemoveButton = ({ id }) => (
   <button
     aria-label='Remove'
     class='button button-small button-outline'
     data-uuid={id}
-    onclick={e => actions.remove(e)}>x
+    onClick={RemoveTodo}
+  >x
   </button>
 )

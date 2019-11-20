@@ -1,7 +1,13 @@
+/** @jsx h */
 import { app } from 'hyperapp'
-import { actions } from './actions/'
-import { state } from './state/'
-import { view } from './views/'
+import { getStateFromStorage } from './utils/local-storage'
+import { View } from './views/'
 import './styles/app.scss'
 
-window.main = app(state, actions, view, document.getElementById('todo'))
+const getInitialState = () => getStateFromStorage() || ({ items: [], value: '', placeholder: 'Add new todo' })
+
+app({
+  init: getInitialState(),
+  view: View,
+  node: document.getElementById('todo')
+})

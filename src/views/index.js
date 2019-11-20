@@ -6,12 +6,11 @@ import { TodoInput } from './todo-input'
 import { TodoListDone } from './todo-list-done'
 import { StateDisplay } from './state-display'
 
-export const view = (state, actions) => (
+export const View = state =>
   <div class='container'>
     <HeaderView />
-    <TodoList state={state} actions={actions} />
-    <TodoInput state={state} actions={actions} />
-    <TodoListDone state={state} actions={actions} />
+    <TodoList items={state.items} />
+    <TodoInput state={state} />
+    <TodoListDone items={state.items} />
     <StateDisplay state={state} />
   </div>
-)
