@@ -28,7 +28,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
+    "@babel/core": "^7.8.4",
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-sw-cache": "^0.3.1",
     "babel-eslint": "^10.0.3",
