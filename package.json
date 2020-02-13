@@ -36,7 +36,7 @@
     "standard": "*"
   },
   "dependencies": {
-    "@hyperapp/events": "^0.0.3",
+    "@hyperapp/events": "^0.0.4",
     "hyperapp": "^2.0.1"
   }
 }
