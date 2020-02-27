@@ -32,11 +32,12 @@ export const TodoItem = ({ item }) => (
       onKeyDown={(state, event) => {
         if (event.keyCode === 13) {
           event.target.contentEditable = false
+          return EditTodo(state, event)
         }
         return state
       }}
       data-uuid={item.id}
-      onInput={EditTodo}
+      onBlur={EditTodo}
     >
       {item.value}
     </div>

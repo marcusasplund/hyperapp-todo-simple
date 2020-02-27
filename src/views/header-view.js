@@ -3,7 +3,7 @@ import { h } from 'hyperapp'
 
 export const HeaderView = () => (
   <header>
-    <h2>todo</h2>
+    <h2>todo app</h2>
     <p>
       <em>
         <small>tap text to edit todo

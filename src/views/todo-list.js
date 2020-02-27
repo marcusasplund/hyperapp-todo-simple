@@ -6,6 +6,10 @@ export const TodoList = ({ items }) => (
   <div>
     {
       items && items.length > 0 &&
+        <h3>todo</h3>
+    }
+    {
+      items && items.length > 0 &&
       items.filter(item => !item.done)
         .map(item => <TodoItem key={item.id} item={item} />)
     }
