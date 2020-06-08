@@ -42,7 +42,9 @@ export const TodoInput = ({ state }) => (
       value={state.value}
       onInput={[NewValue, targetValue]}
     />
-    <button>
+    <button
+      disabled={!state.value}
+    >
       {`New #${state.items.length + 1}`}
     </button>
   </form>)
