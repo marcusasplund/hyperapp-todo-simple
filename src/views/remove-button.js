@@ -12,9 +12,8 @@ const RemoveTodo = (state, e) => {
 export const RemoveButton = ({ id }) => (
   <button
     aria-label='Remove'
-    class='button button-small button-outline'
+    class='button button-small button-outline delete'
     data-uuid={id}
     onClick={RemoveTodo}
-  >x
-  </button>
+  />
 )

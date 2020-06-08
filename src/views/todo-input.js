@@ -6,6 +6,7 @@ import { generateUUID } from '../utils/generate-uuid'
 
 const newItem = value => ({
   value,
+  editing: false,
   done: false,
   id: generateUUID()
 })
@@ -31,22 +32,17 @@ const Add = state => {
 }
 
 export const TodoInput = ({ state }) => (
-  <div class='row'>
-    <form
-      onSubmit={preventDefault(Add)}
-    >
-      <label class='row'>
-        <input
-          type='text'
-          placeholder={state.placeholder}
-          aria-label={state.placeholder}
-          value={state.value}
-          onInput={[NewValue, targetValue]}
-        />
-        <button>
-          {`New #${state.items.length + 1}`}
-        </button>
-      </label>
-    </form>
-  </div>
-)
+  <form
+    onSubmit={preventDefault(Add)}
+  >
+    <input
+      type='text'
+      placeholder={state.placeholder}
+      aria-label={state.placeholder}
+      value={state.value}
+      onInput={[NewValue, targetValue]}
+    />
+    <button>
+      {`New #${state.items.length + 1}`}
+    </button>
+  </form>)

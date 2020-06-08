@@ -3,7 +3,7 @@ import { h } from 'hyperapp'
 import { TodoItem } from './todo-item'
 
 export const TodoList = ({ items }) => (
-  <div>
+  <ul>
     {
       items && items.length > 0 &&
         <h3>todo</h3>
@@ -13,5 +13,5 @@ export const TodoList = ({ items }) => (
       items.filter(item => !item.done)
         .map(item => <TodoItem key={item.id} item={item} />)
     }
-  </div>
+  </ul>
 )

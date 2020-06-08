@@ -2,6 +2,7 @@
 import { app } from 'hyperapp'
 import { getStateFromStorage } from './utils/local-storage'
 import { View } from './views/'
+import 'milligram'
 import './styles/app.scss'
 
 const getInitialState = () => getStateFromStorage() || ({ items: [], value: '', placeholder: 'Add new todo' })

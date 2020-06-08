@@ -3,7 +3,7 @@ import { h } from 'hyperapp'
 import { storeStateInStorage } from '../utils/local-storage'
 
 const ToggleTodo = (state, e) => {
-  const items = state.items.map(t => e.target.dataset.uuid === t.id ? { ...t, ...{ done: !t.done } } : t)
+  const items = state.items.map(t => e.target.dataset.uuid === t.id ? { ...t, ...{ done: !t.done, editing: false } } : t)
   const newState = { ...state, ...{ items: items } }
   storeStateInStorage(newState)
   return newState
@@ -12,9 +12,8 @@ const ToggleTodo = (state, e) => {
 export const ToggleButton = ({ id }) => (
   <button
     aria-label='Toggle'
-    class='button button-small button-outline'
+    class='button button-small button-outline check'
     data-uuid={id}
     onClick={ToggleTodo}
-  >✓
-  </button>
+  />
 )
