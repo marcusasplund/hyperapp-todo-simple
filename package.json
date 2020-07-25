@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@hyperapp/events": "^0.0.4",
-    "hyperapp": "^2.0.4",
+    "hyperapp": "^2.0.5",
     "milligram": "^1.4.1"
   }
 }
