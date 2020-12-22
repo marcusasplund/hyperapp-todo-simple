@@ -16,10 +16,6 @@
   "bugs": {
     "url": "https://github.com/marcusasplund/hyperapp-todo-simple/issues"
   },
-  "cache": {
-    "inDev": true,
-    "swDest": "service-worker.js"
-  },
   "standard": {
     "parser": "babel-eslint",
     "ignore": [
@@ -28,16 +24,16 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.10.2",
+    "@babel/core": "^7.12.10",
     "babel-eslint": "^10.1.0",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-sw-cache": "^0.3.1",
-    "sass": "^1.26.8",
+    "parcel-plugin-sw-precache": "^1.1.2",
+    "sass": "^1.30.0",
     "standard": "*"
   },
   "dependencies": {
     "@hyperapp/events": "^0.0.4",
-    "hyperapp": "^2.0.5",
+    "hyperapp": "^2.0.8",
     "milligram": "^1.4.1"
   }
 }
