@@ -1,5 +1,6 @@
 language: node_js
-node_js: - 12
+node_js: 
+  - 12
 before_install:
   - npm install -g @lhci/cli@0.6.x
 script:
