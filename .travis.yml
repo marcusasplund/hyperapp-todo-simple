@@ -1,11 +1,11 @@
 language: node_js
-node_js:
-  - "12"
-
-sudo: false
-
+node_js: - 12
 install:
   - yarn
-
+before_install:
+  - yarn add -g @lhci/cli@0.3.x
 script:
   - yarn build
+  - lhci autorun
+addons:
+  chrome: stable
