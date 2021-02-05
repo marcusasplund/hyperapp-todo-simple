@@ -32,7 +32,7 @@
     "standard": "*"
   },
   "dependencies": {
-    "@hyperapp/events": "^0.0.4",
+    "@hyperapp/events": "^0.1.0",
     "hyperapp": "^2.0.8",
     "milligram": "^1.4.1"
   }
