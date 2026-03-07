@@ -1,10 +1,4 @@
-/* eslint-disable no-unused-vars */
-import { h } from 'hyperapp'
+import { h, text } from 'hyperapp'
 
-export const StateDisplay = ({ state }) => (
-  <pre>
-    <code>
-      {JSON.stringify(state, null, 2)}
-    </code>
-  </pre>
-)
+export const StateDisplay = ({ state }) =>
+  h('pre', {}, h('code', {}, text(JSON.stringify(state, null, 2))))

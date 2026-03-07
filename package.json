@@ -8,32 +8,21 @@
     "url": "git+ssh://git@github.com/marcusasplund/hyperapp-todo-simple.git"
   },
   "scripts": {
-    "start": "standard && parcel src/index.html -p 3000 --open",
-    "build": "rm -rf build && standard && parcel build src/index.html -d build --public-url ./"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview" 
   },
   "version": "0.3.0",
-  "author": "Marcus Asplund <marcus@greatname.se> (@marcusasplund)",
+  "author": "Marcus Asplund <rootfood@gmail.com> (@marcusasplund)",
   "bugs": {
     "url": "https://github.com/marcusasplund/hyperapp-todo-simple/issues"
   },
-  "standard": {
-    "parser": "babel-eslint",
-    "ignore": [
-      "dist/",
-      "release/"
-    ]
-  },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "babel-eslint": "^10.1.0",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-sw-precache": "^1.1.2",
-    "sass": "^1.30.0",
-    "standard": "*"
+    "vite": "^7.3.1"
   },
   "dependencies": {
-    "@hyperapp/events": "^0.1.0",
-    "hyperapp": "^2.0.8",
+    "@hyperapp/events": "^2.0.0",
+    "hyperapp": "^2.0.22",
     "milligram": "^1.4.1"
   }
 }

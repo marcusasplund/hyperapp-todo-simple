@@ -1,18 +1,11 @@
-/* eslint-disable no-unused-vars */
-import { h } from 'hyperapp'
+import { h, memo, text } from 'hyperapp'
 import { TodoItem } from './todo-item'
 
-export const TodoListDone = ({ items }) => (
-  <ul>
-    {
-      items && items.length > 0 &&
-        <h3>done</h3>
-    }
-    {
-      items && items.length > 0 &&
-      items.filter(item => item.done)
-        .map(item => <TodoItem key={item.id} item={item} />)
-    }
-  </ul>
+export const TodoListDone = ({ items }) => {
+  const doneItems = (items || []).filter(item => item.done)
 
-)
+  return h('ul', {}, [
+    items && items.length > 0 ? h('h3', {}, text('done')) : null,
+    ...doneItems.map(item => memo(TodoItem, { item, key: item.id }))
+  ])
+}
